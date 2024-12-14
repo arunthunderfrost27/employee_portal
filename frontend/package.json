@@ -1,0 +1,55 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.2.0",
+    "@mui/styled-engine": "^6.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "axios": "^1.7.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --sourcemap --target=es2020 --format=esm --loader:.js=jsx --loader:.jsx=jsx --outfile=public/index.js",
+    "watch": "esbuild src/index.js --bundle --watch --sourcemap --target=es2020 --format=esm --loader:.js=jsx --loader:.jsx=jsx --outfile=public/index.js",
+    "serve": "http-server public -p 3000 -c-1",
+    "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "preview": "npm run build && npm run serve"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "concurrently": "^8.2.2",
+    "esbuild": "0.20.2",
+    "esbuild-plugin-react": "^0.2.3",
+    "http-server": "^14.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
