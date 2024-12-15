@@ -104,8 +104,15 @@ department="HR"
 
 Expected Output : "Employee updated Successfully!"
 
+TestCase 5 : Invalid Date of birth
 
+name="Kavin"
+dob="23-05-2024"
+age=0
+gender="Male"
+department="Med"
 
+Expected Output : "Age must be between 18 and 60"
 
 
 
