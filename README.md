@@ -1,4 +1,4 @@
-Clone the repository using https://github.com/arunthunderfrost27/Employee-portal.git
+Clone the repository using (https://github.com/arunthunderfrost27/employee_portal.git)
 
 To run the Application =>
 
